@@ -39,25 +39,41 @@ psql -c "ALTER USER jose WITH PASSWORD '123'"
 From postgres hit `psql` and then you are in the postgresql console:
 
 Check version
-```SELECT version();```
+```
+SELECT version();
+```
 
 Check date
-```SELECT now();```
+```
+SELECT now();
+```
 
 List databases
-```\l```
+```
+\l
+```
 
 Now it is time to create a DATABASE!
-```CREATE DATABASE favouritecolors;```
+```
+CREATE DATABASE favouritecolors;
+```
 
 List databases again and see diference.
-```\l```
+```
+\l
+```
 
 Now we create a table inside our database (A table is like a sheet in an excelsheet)
-```CREATE TABLE colors (ColorID int, ColorName char(20))```
+```
+CREATE TABLE colors (ColorID int, ColorName char(20));
+```
 
 Now store some data:
-```INSERT INTO colors VALUES (1, 'red'), (2, 'blue'), (3, 'yellow');```
+```
+INSERT INTO colors VALUES (1, 'red'), (2, 'blue'), (3, 'yellow');
+```
 
 And finally we list them:
-```SELECT * FROM colors;```
+```
+SELECT * FROM colors;
+```
